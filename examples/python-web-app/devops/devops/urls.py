@@ -19,13 +19,4 @@ from django.urls import include, path
 urlpatterns = [
     path('demo/', include('demo.urls')),
     path('admin/', admin.site.urls),
-]from django.urls import path
-from . import views  # Import views
-
-urlpatterns = [
-    path('', views.home_view, name='home'),  # Root URL (Empty path)
-    path('demo/', views.demo_view, name='demo'),
-    path('admin/', admin.site.urls),
 ]
-
-
